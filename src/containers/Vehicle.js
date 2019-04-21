@@ -4,6 +4,7 @@ import {withRouter}       from 'react-router'
 import VehicleView        from '../components/VehicleView'
 
 class Vehicle extends Component {
+  componentDidMount() { window.scroll(0,0) } // :)
   render() {
     return (
       <VehicleView {...this.props} />
