@@ -19,7 +19,11 @@ class Vehicles extends Component {
         {...this.state}
         vehicles={this.props.vehicles.filter(v => {
           const title = `${v.Make} ${v.Model}`.toLowerCase()
-          return title.match(this.state.filt.toLowerCase())
+          const split = this.state.filt.split(" ")
+          for (let i = 0; i < split.length; i++) {
+            if (!title.match(split[i].toLowerCase())) {return false}
+          }
+          return true
         })}
         updateFilter={to => this.setState({filt: to})} />
     )
