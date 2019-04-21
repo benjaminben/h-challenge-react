@@ -7,10 +7,12 @@ import './index.css'
 import Stage from './containers/Stage'
 import * as serviceWorker from './serviceWorker'
 
+console.log(process.env.PUBLIC_URL)
+
 const Root = () => {
   return(
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Stage />
       </BrowserRouter>
     </Provider>
