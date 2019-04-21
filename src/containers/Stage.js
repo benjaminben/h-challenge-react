@@ -16,7 +16,7 @@ class Stage extends Component {
     return (
       props.vehicles.length
       ? <Switch>
-          <Route path="/" component={Vehicles} />
+          <Route exact path="/" component={Vehicles} />
           <Route path="/:vid" component={Vehicle} />
         </Switch>
       : <Loader />

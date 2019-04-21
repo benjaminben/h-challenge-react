@@ -12,7 +12,7 @@ class Vehicles extends Component {
 
 function mapStateToProps(state) {
   return {
-
+    vehicles: state.vehicles
   }
 }
 
