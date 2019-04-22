@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/h-challenge-react/static/css/main.7689cd9f.chunk.css"
   },
   {
-    "revision": "f56386fc93c1d3521c0d494e80411841",
+    "revision": "74801882c6be79f9caa2bab43c87976c",
     "url": "/h-challenge-react/index.html"
   }
 ];
